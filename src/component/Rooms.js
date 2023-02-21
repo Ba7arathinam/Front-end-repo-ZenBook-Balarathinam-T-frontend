@@ -4,13 +4,14 @@ import Modal from 'react-bootstrap/Modal';
 import Carousel from 'react-bootstrap/Carousel';
 
 import { Link } from 'react-router-dom';
+import { MyBookings } from '../pages/Profilescreen';
 
-function Rooms({room}) {
+function Rooms({room,fromdate,todate,totaldays}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
+<MyBookings from={fromdate} to={todate}/>
   return (
     <div className='row bs'>
       <div className='col-md-3'>
@@ -23,10 +24,10 @@ function Rooms({room}) {
         <p>Phone Number:{room.phonenumber}</p>
         <p>Type:{room.type}</p>
         </b>  
-        <Link to={`/book/${room._id}`} className='br'>
-          <Button className='btn btn-secondary m-2'variant="secondary">
+        <Link to={`/book/${room._id}/${fromdate}/${todate}`} className='br'>
+          <button className='btn btn-secondary m-2'variant="secondary">
             Book Rooms
-          </Button>
+          </button>
           </Link>
           <Button className='btn btn-secondary'onClick={handleShow}>View Details</Button>
       </div>

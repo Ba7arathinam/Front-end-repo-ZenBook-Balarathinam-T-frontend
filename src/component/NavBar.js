@@ -12,7 +12,7 @@ function NavBar() {
     <div>
        <nav class="navbar navbar-expand-lg bo">
   <div class="container-fluid">
-    <a class="navbar-brand" href='#'>ZinRoomz</a>
+    <a class="navbar-brand" href='/home'>ZinRooms</a>
     <button class='navbar-toggler'
     type='button'
     data-toggle='collapse'
@@ -30,7 +30,7 @@ function NavBar() {
    <i className='fa fa-user'></i> {user.data.name}
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="/">Booking</a>
+    <a class="dropdown-item" href="/profile">profile</a>
     <a class="dropdown-item" href="/login" onClick={logout}>LogOut</a      >
   </div>
 </div>

@@ -13,7 +13,7 @@ function Loader() {
         borderColor: "red",
       `
   return (
-    <div style={{marginTop:'200px',marginLeft:'1050px'}}>
+    <div style={{marginTop:'160px',marginLeft:'150px'}}>
          <div className="sweet-loading text-center ">
       
 
