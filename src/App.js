@@ -18,11 +18,11 @@ function App() {
          <NavBar/> 
           <Router>
           <Routes>
-          <Route path='https://zinrooms.onrender.com//home' element={<Home/>}/>
-          <Route path='https://zinrooms.onrender.com//book/:roomid/:fromdate/:todate' element={<Booking/>}/>
-           <Route path='https://zinrooms.onrender.com//Register' element={<Register/>}/>
-           <Route path='https://zinrooms.onrender.com//Login' element={<Login/>}/>
-           <Route path='https://zinrooms.onrender.com//admin' element={<Admin/>}/>
+          <Route path='https://zinrooms.onrender.com/home' element={<Home/>}/>
+          <Route path='https://zinrooms.onrender.com/book/:roomid/:fromdate/:todate' element={<Booking/>}/>
+           <Route path='https://zinrooms.onrender.com/Register' element={<Register/>}/>
+           <Route path='https://zinrooms.onrender.com/Login' element={<Login/>}/>
+           <Route path='https://zinrooms.onrender.com/admin' element={<Admin/>}/>
            <Route path='/Profile' element={<Profilescreen/>}/>
            <Route path='/' element={<Landing/>}/>
          </Routes>
