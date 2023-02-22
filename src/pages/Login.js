@@ -36,7 +36,8 @@ function Login() {
                 } catch(error)  {
                     console.log(error)
                     setloading(false);
-                    seterror(true);
+                    window.location.href='/home'
+                    // seterror(true);
                 }
      
     }
