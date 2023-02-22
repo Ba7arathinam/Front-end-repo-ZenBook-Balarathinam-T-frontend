@@ -22,7 +22,7 @@ function Login() {
                  }
                  try {
                     setloading(true);
-                  const result= await axios.post('/api/users/login',user)
+                  const result= await axios.post('https://zinrooms-bookings.onrender.com/api/users/login',user)
                   setloading(false);
                    localStorage.setItem('CurrentUser',JSON.stringify(result))
                   window.location.href='/home'
