@@ -26,7 +26,7 @@ function Register() {
                }
             try {
                 setloading(true);
-                const result= await axios.post('/api/users/register',user).data
+                const result= await axios.post('https://zinrooms-bookings.onrender.com/api/users/register',user).data
                 setloading(false);
                 setsuccess(true);
                 setname('')
