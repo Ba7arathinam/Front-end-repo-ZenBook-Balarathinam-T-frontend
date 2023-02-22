@@ -23,7 +23,7 @@ const Home=()=> {
     const fetchData = async()=>{
     try {
         setloading(true)
-        const {data:response}=await axios.get('https://zinrooms-bookings.onrender.com/api/rooms/getallrooms')
+        const {data:response}=await axios.get('/api/rooms/getallrooms')
         setrooms(response);
         setduplicaterooms(response)
         setloading(false)
